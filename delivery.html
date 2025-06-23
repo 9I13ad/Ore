@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>上游发货登记</title><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body>
+<h2>📦 上游发货登记</h2>
+<form id="form">
+  <label>发运日期：<input type="date" name="发运日期" required></label><br>
+  <label>发运船号：<input name="发运船号" required></label><br>
+  <label>供应商名称：<input name="供应商名称"></label><br>
+  <label>上游装船数量（吨）：<input type="number" name="本船矿石上游装船数量（吨）" required></label><br>
+  <label>矿石磷含量（%）：<input type="number" step="0.01" name="矿石磷含量（下游跟踪结果）"></label><br>
+  <button type="submit">提交</button>
+</form>
+<script>
+document.getElementById('form').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('✅ 上游发货信息已提交（模拟）');
+  this.reset();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>下游收货登记</title><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body>
+<h2>📥 下游收货登记</h2>
+<form id="form">
+  <label>发运日期：<input type="date" name="发运日期" required></label><br>
+  <label>实际到港日期：<input type="date" name="实际到港日期"></label><br>
+  <label>收货单位：<input name="收货单位"></label><br>
+  <label>本船矿石上游装船数量（吨）：<input type="number" name="本船矿石上游装船数量（吨）"></label><br>
+  <label>本船矿石下游过磅数量（吨）：<input type="number" name="本船矿石下游过磅数量（吨）"></label><br>
+  <label>运输损耗数量（吨）：<input type="number" name="运输损耗数量（吨）"></label><br>
+  <label>矿石磷含量（%）：<input type="number" step="0.01" name="矿石磷含量（下游跟踪结果）"></label><br>
+  <label>发运船号：<input name="发运船号"></label><br>
+  <label>备注：<input name="备注"></label><br>
+  <button type="submit">提交</button>
+</form>
+<script>
+document.getElementById('form').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('✅ 下游收货信息已提交（模拟）');
+  this.reset();
+});
+</script>
+</body>
+</html>
